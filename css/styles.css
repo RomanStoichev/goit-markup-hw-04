@@ -288,6 +288,10 @@ a {
   text-align: center;
 
   background-color: var(--background-color-hero-footer);
+  background-image: url("../images/Img-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
   /* margin-bottom: 94px; */
 }
