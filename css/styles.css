@@ -44,7 +44,7 @@ ul {
 }
 /* nav, contacts */
 .site-nav .link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -60,8 +60,11 @@ ul {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 .contact-nav .link {
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -75,6 +78,7 @@ ul {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
+  stroke: var(--accent-color);
 }
 .link.current {
   color: var(--accent-color);
@@ -418,4 +422,38 @@ a {
 }
 .portfolio-list-text {
   padding: 20px 24px;
+}
+
+/* svg icons */
+.item.mail {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.icon-mail:hover {
+  stroke: var(--accent-color);
+}
+.item.phone {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}
+.icon-phone:hover {
+  stroke: var(--accent-color);
 }
