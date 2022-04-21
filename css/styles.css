@@ -308,9 +308,20 @@ a {
   align-items: center;
   width: 270px;
 }
-/* .feauters-items + li {
-  padding-left: 30px;
-} */
+.icon-futures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.icon-futures > svg {
+  width: 70px;
+  height: 70px;
+}
 .work-items {
   display: flex;
   justify-content: space-between;
