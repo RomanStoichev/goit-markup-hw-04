@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --icons-color: #afb1b8;
 
   --background-color-hero-footer: #2f303a;
 }
@@ -256,7 +257,6 @@ a {
 .site-nav .item + .item,
 .contact-nav .item + .item {
   margin-left: 50px;
-  /* background-color: tomato; */
 }
 .main-nav {
   display: flex;
@@ -327,13 +327,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-/* .work-items + li {
-  padding-left: 30px;
-} */
+/* наша команда */
+
 .team {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 .team-visual {
   display: flex;
@@ -381,8 +379,8 @@ a {
   margin-right: 10px;
 }
 .socialmedia {
-  fill: var(--primary-text-color);
-  stroke: var(--primary-text-color);
+  fill: var(--icons-color);
+  stroke: var(--icons-color);
 }
 .socialmedia:hover,
 .socialmedia:focus {
@@ -405,10 +403,47 @@ a {
 .team > li + li {
   padding-left: 30px;
 }
+/* наши клиенты */
+.container.clients .section-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.icons-clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--icons-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--icons-color);
+  cursor: pointer;
+}
+.client svg {
+  width: 106px;
+  height: 60px;
+}
+.client:hover,
+.client:focus {
+  border: 1px solid var(--accent-color);
+  fill: #2196f3;
+  /* stroke: var(--accent-color); */
+}
+
+/*  футер */
 .container.footer {
   display: flex;
   flex-direction: column;
 }
+
 .footer a {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -500,7 +535,6 @@ a {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  /* justify-content: flex-start; */
 }
 .icon-mail {
   width: 16px;
