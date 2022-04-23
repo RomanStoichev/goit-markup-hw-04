@@ -365,9 +365,9 @@ a {
   justify-content: center;
 }
 .icons {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 44px;
   height: 44px;
 
@@ -378,46 +378,59 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+.icons.icons:not(:last-child) {
+  margin-right: 10px;
+}
+.icons use {
+  width: 20px;
+  height: 20px;
+}
 
 .icons:nth-last-child() {
   margin-right: 10px;
 }
-.socialmedia {
-  fill: var(--icons-color);
-  stroke: var(--icons-color);
-}
-.socialmedia:hover,
-.socialmedia:focus {
-  stroke: var(--primary-background-color);
-  fill: var(--primary-background-color);
-}
-.icons:hover,
-.icons:focus {
-  background-color: var(--accent-color);
-}
-
 .socialmedia {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+
+  fill: var(--icons-color);
+  stroke: var(--icons-color);
+}
+.socialmedia:hover,
+.socialmedia:focus,
+.socialmedia.link:hover,
+.socialmedia.link:focus {
+  stroke: var(--primary-background-color);
+  fill: var(--primary-background-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .team > li + li {
   padding-left: 30px;
 }
 /* наши клиенты */
-.container.clients .section-title {
+
+.section.clients {
   padding-top: 94px;
-  padding-bottom: 50px;
+}
+
+.container.clients .section-title {
+  margin-bottom: 50px;
 }
 .icons-clients-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* flex-direction: row; */
+
   align-items: center;
 }
+.icon-clients + .icon-clients {
+  margin-left: 30px;
+}
+
 .client {
   display: flex;
   justify-content: center;
@@ -449,9 +462,14 @@ a {
 }
 
 .footer-nav {
+  display: flex;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 20px;
   margin-right: 70px;
+}
+.footer-nav > a {
+  padding-bottom: 20px;
 }
 
 .footer-icons {
