@@ -219,12 +219,11 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 .portfolio-text {
-  width: 322px;
-  height: 33px;
-
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -242,7 +241,7 @@ a {
 }
 .container-header {
   display: flex;
-  border-bottom: 1px solid #eeeeee;
+
   flex-direction: row;
 }
 .nav-items {
@@ -533,7 +532,7 @@ a {
 .filters {
   display: flex;
   /* flex-direction: row; */
-
+  border-top: 1px solid #eeeeee;
   justify-content: center;
   list-style: none;
   padding-top: 94px;
@@ -546,17 +545,12 @@ a {
 .item + li {
   padding-left: 8px;
 }
-.container.projects > ul {
-  /* display: flex;
-  justify-content: center; */
-  padding-bottom: 64px;
-}
+
 .projects.list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 30 px;
-  padding-bottom: 30px;
+
   justify-content: space-between;
 }
 
@@ -564,7 +558,11 @@ a {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
-
+.list-item:nth-child(7),
+.list-item:nth-child(8),
+.list-item:nth-child(9) {
+  margin-bottom: 0;
+}
 .list-item:hover,
 .list-item:focus {
   background: #ffffff;
@@ -577,12 +575,6 @@ a {
   padding-right: 30px;
 }
 
-.projects img {
-  padding-bottom: 20px;
-}
-.projects h3 {
-  padding-bottom: 4px;
-}
 .portfolio-list-text {
   padding: 20px 24px;
 }
