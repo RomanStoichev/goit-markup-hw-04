@@ -97,15 +97,14 @@ ul {
 
   padding-bottom: 30px;
   width: 696px;
+  margin: 0 auto;
 }
 
 .container.hero {
-  justify-content: end;
-  align-items: center;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: column;
-  align-self: flex-end;
+
   padding: 200px 0;
 }
 /* sections */
@@ -141,7 +140,8 @@ ul {
 }
 /* buttons */
 .button {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
 
   border: none;
   border-radius: 4px;
@@ -286,16 +286,11 @@ a {
 }
 
 .hero {
-  display: flex;
-  text-align: center;
-
   background-color: var(--background-color-hero-footer);
   background-image: url("../images/Img-hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 0;
-  /* margin-bottom: 94px; */
 }
 .footer {
   background-color: var(--background-color-hero-footer);
@@ -417,9 +412,6 @@ a {
   padding-top: 94px;
 }
 
-.container.clients .section-title {
-  margin-bottom: 50px;
-}
 .icons-clients-list {
   display: flex;
   /* flex-direction: row; */
