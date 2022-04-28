@@ -278,10 +278,10 @@ a {
 .section {
   padding-bottom: 94px;
 }
-.section-team {
+.our-team {
   padding-top: 94px;
-  display: block;
-  margin: 0;
+  /* display: block; */
+  /* margin: 0; */
   background-color: var(--secondary-background-color);
 }
 
