@@ -559,6 +559,7 @@ a {
 /* PORTFOLIO PAGE */
 .portfolio {
   border-top: 1px solid #eeeeee;
+  padding: 94px 0;
 }
 /* BUTTONS Filters */
 
@@ -588,23 +589,14 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.filters {
-  display: flex;
 
-  justify-content: center;
-  list-style: none;
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
 .list-filters {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 /* END BUTTONS FILTERS */
-.projects {
-  padding-bottom: 94px;
-}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -662,20 +654,4 @@ a {
 .item-portfolio + .item-portfolio {
   margin-left: 8px;
 }
-
-/* .list-item:not(:last-child) {
-  margin-right: 30px;
-}
- */
-/* .list-item:hover,
-.list-item:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-list-text {
-  padding: 20px 24px;
-} */
+/* END PORTFOLIO */
